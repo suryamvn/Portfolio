@@ -1027,6 +1027,49 @@ html {
   z-index: 30;
 }
 
+@media (max-width: 450px) {
+  .navigation {
+    width: 300px;
+  }
+
+  .navigation ul:nth-child(1) {
+    width: 300px;
+  }
+
+  .navigation ul:nth-child(1) li {
+    /* width: 50px; */
+    width: 50px;
+  }
+
+  .navigation ul:nth-child(1) li a {
+    width: 50px;
+  }
+
+  .navigation ul:nth-child(1) li ~ .indicator {
+    width: 50px;
+  }
+
+  .navigation ul:nth-child(1) li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(50px * 1));
+  }
+
+  .navigation ul:nth-child(1) li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(50px * 2));
+  }
+
+  .navigation ul:nth-child(1) li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(50px * 3));
+  }
+
+  .navigation ul:nth-child(1) li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(50px * 4));
+  }
+
+  .navigation ul:nth-child(1) li:nth-child(6).active ~ .indicator {
+    transform: translateX(calc(50px * 5));
+  }
+}
+
 .navigation ul {
   position: relative;
   display: flex;
